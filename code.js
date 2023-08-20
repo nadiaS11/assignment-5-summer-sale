@@ -9,6 +9,7 @@ const discountInput = document.getElementById("discount-input");
 function applyDiscount() {
     if (total >= 200 && discountInput.value==='SELL200') {
         updateDiscountAndGrandTotal();
+        
     }
     else{alert("Coupon code invalid")
     discountInput.value=""
@@ -19,12 +20,12 @@ function applyDiscount() {
 // For discount "Apply" button 
 applyButton.addEventListener("click", function() {
   applyDiscount();
-  applyButton.disabled = true;
+  
 });
 
 // to update the grand total after applying discounts
 function updateDiscountAndGrandTotal() {
-    if (total >= 200) {
+  if (total >= 200 && discountInput.value==='SELL200') {
         discounts = total * 0.2;
       } else {
         discounts = 0;
@@ -69,5 +70,8 @@ function whenClicked(e){
 }
 
 
- // To enable "Make Purchase" button when total>0
+ // To Go home page
+ function goHome(e){
+  
+ }
  
