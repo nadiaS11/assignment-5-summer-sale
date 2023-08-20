@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -287,8 +287,7 @@
           <div class="mx-auto">
             <p class="text-4xl font-semibold pt-20">Sportswear</p>
             <!-- Sportswear cards -->
-            <div
-              class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-2 mx-auto"
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-2 mx-auto"
             >
               <!-- Sportswear card 1 -->
 
@@ -552,27 +551,27 @@
               </div>
               <div
                 id="total-div"
-                class="flex items-center justify-between font-semibold text-md"
+                class="flex gap-2 items-center justify-start font-semibold text-md"
               >
-                <h2 class="">Total</h2>
+                <h2 class="">Total Price</h2>
                 <h2 class="text-gray-400" id="">
                   <span id="total-amount">00</span>TK
                 </h2>
               </div>
               <div
                 id="discount-div"
-                class="flex items-center justify-between font-semibold text-md"
+                class="flex gap-2 items-center justify-start font-semibold text-md"
               >
-                <h2 id="">Discount</h2>
+                <h2 id="">Discount:</h2>
                 <h2 class="text-gray-400">
                   <span id="discount-amount">00</span>TK
                 </h2>
               </div>
               <div
                 id="total-div"
-                class="flex items-center justify-between font-bold text-md border-b-2 solid border-gray-300"
+                class="flex gap-2 items-center justify-start font-bold text-md border-b-2 solid border-gray-300"
               >
-                <h2 class="" id="grand">Grand Total</h2>
+                <h2 class="" id="grand">Total: </h2>
                 <h2 class="text-gray-400">
                   <span id="grand-amount">00</span>TK
                 </h2>
@@ -597,7 +596,7 @@
         <h2 class="card-title font-bold">Congratulations!</h2>
         <p>Your Purchase the product</p>
         <div class="card-actions">
-          <button onclick="goHome(this)" id="btn-home" class="btn text-white bg-[#E527B2]">Go Home</button>
+          <button onclick="resetAll()" id="btn-home" class="btn text-white bg-[#E527B2]">Go Home</button>
         </div>
       </div>
     </div>
