@@ -14,7 +14,7 @@ function applyDiscount() {
       updateGrandTotal();
     }
   }
-
+  
 // For discount "Apply" button 
 applyButton.addEventListener("click", function() {
   applyDiscount();
@@ -24,8 +24,8 @@ applyButton.addEventListener("click", function() {
 function whenClicked(e){
     const cartItems = document.getElementById("selected-items");
   const totalAmount = document.getElementById("total-amount");
-//   const grandTotalAmount = document.getElementById("grand-amount");
-//   const discountAmount = document.getElementById("discount-amount");
+  const grandTotalAmount = document.getElementById("grand-amount");
+  const discountAmount = document.getElementById("discount-amount");
   const getPrice = parseFloat(e.childNodes[3].childNodes[5].innerText);
 
   //get the product name
