@@ -72,6 +72,6 @@ function whenClicked(e){
 
  // To Go home page
  function goHome(e){
-  
+  window.location.href='index.html'
  }
  
